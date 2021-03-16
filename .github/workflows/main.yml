@@ -22,7 +22,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
         with:
-          ref: openwrt-21.02
+          ref: main
 
       - name: Initialize Environment
         env:
