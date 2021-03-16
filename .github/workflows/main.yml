@@ -41,6 +41,7 @@ jobs:
 
       - name: Build OpenWrt
         run: |
+          chmod +x build.sh
           ./build.sh
           df -h
 
