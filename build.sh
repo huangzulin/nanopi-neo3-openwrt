@@ -85,10 +85,12 @@ find . -name .git -exec rm -rf {} +
 
 # zh_cn to zh_Hans
 cd "$proj_dir/openwrt/package"
+chmod +x "$proj_dir/scripts/convert_translation.sh"
 "$proj_dir/scripts/convert_translation.sh"
 
 # create acl files
 cd "$proj_dir/openwrt"
+chmod +x "$proj_dir/scripts/create_acl_for_luci.sh"
 "$proj_dir/scripts/create_acl_for_luci.sh" -a
 
 # install packages
